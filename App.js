@@ -7,11 +7,16 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import ButtonScreen from './src/screen/ButtonScreen';
+import {Provider} from 'react-redux';
+import store from './src/redux/store';
 
 const App = () => {
-  return <ButtonScreen />;
+  return (
+    <Provider store={store}>
+      <ButtonScreen />
+    </Provider>
+  );
 };
 
 export default App;

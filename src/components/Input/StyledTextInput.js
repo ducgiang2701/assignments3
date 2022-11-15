@@ -7,7 +7,7 @@ import {
   Color,
 } from './styled';
 
-const StyledTexyInput = props => {
+const StyledTextInput = props => {
   return (
     <InputWrapper>
       <LabelStyles>{props.lable}</LabelStyles>
@@ -19,4 +19,4 @@ const StyledTexyInput = props => {
   );
 };
 
-export default StyledTexyInput;
+export default StyledTextInput;
