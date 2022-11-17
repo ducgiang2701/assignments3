@@ -7,14 +7,14 @@
  */
 
 import React from 'react';
-import ButtonScreen from './src/screen/ButtonScreen';
 import {Provider} from 'react-redux';
 import store from './src/redux/store';
+import MainNavigation from './src/navigation/NavigationContainer';
 
 const App = () => {
   return (
     <Provider store={store}>
-      <ButtonScreen />
+      <MainNavigation />
     </Provider>
   );
 };
