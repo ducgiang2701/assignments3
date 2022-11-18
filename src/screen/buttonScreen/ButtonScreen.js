@@ -93,7 +93,6 @@ const ButtonScreen = () => {
       setBorderRadius(0),
     );
   };
-
   return (
     <Container>
       <SafeAreaViewStyles>
@@ -104,23 +103,6 @@ const ButtonScreen = () => {
               <TextCreateHeader>{'Create'}</TextCreateHeader>
             </TouchableOpacity>
           </HeaderContainer>
-
-          <Footer>
-            <TextResult>{'Result'}</TextResult>
-            <MyButton
-              text={text}
-              color={colorText}
-              backgroudColor={backgroudColor}
-              valueWidth={buttonWidthValue}
-              valueHeight={buttonHeightValue}
-              width={Math.floor(buttonWidthTextPx)}
-              height={Math.floor(buttonHeightTextPx)}
-              borderStyle={valueMethod}
-              borderWidth={Math.floor(borderWidth)}
-              borderRadius={Math.floor(borderRadius)}
-              borderColor={borderColor}
-            />
-          </Footer>
           <BodyContainer>
             <StyledTextInput
               lable={'Button text'}
@@ -200,6 +182,23 @@ const ButtonScreen = () => {
               onChangeText={bColor => setBorderColor(bColor)}
             />
           </BodyContainer>
+
+          <Footer>
+            <TextResult>{'Result'}</TextResult>
+            <MyButton
+              text={text}
+              color={colorText}
+              backgroudColor={backgroudColor}
+              valueWidth={buttonWidthValue}
+              valueHeight={buttonHeightValue}
+              width={Math.floor(buttonWidthTextPx)}
+              height={Math.floor(buttonHeightTextPx)}
+              borderStyle={valueMethod}
+              borderWidth={Math.floor(borderWidth)}
+              borderRadius={Math.floor(borderRadius)}
+              borderColor={borderColor}
+            />
+          </Footer>
         </ScrollView>
       </SafeAreaViewStyles>
     </Container>
