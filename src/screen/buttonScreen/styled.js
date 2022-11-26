@@ -22,13 +22,14 @@ export const TextCreateHeader = styled.Text`
   font-size: 18px;
 `;
 export const BodyContainer = styled.View`
-  margin: 49px 30px 0px 30px;
+  margin: 20px 30px 0px 30px;
 `;
-export const Footer = styled.View`
+export const ResultWrapper = styled.View`
   background-color: #f1f1f1;
   padding: 18px 30px 18px 30px;
   align-items: center;
   justify-items: center;
+  margin: 28px 0px;
 `;
 export const TextResult = styled.Text`
   font-size: 16px;
